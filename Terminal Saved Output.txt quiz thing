@@ -1,0 +1,48 @@
+Last login: Mon Sep  9 11:35:08 on ttys000
+1012283@1012283-student-HXJKD5M0265D ~ % cd Desktop
+1012283@1012283-student-HXJKD5M0265D Desktop % mkdir quiz
+1012283@1012283-student-HXJKD5M0265D Desktop % cd quiz
+1012283@1012283-student-HXJKD5M0265D quiz % cd ..
+1012283@1012283-student-HXJKD5M0265D Desktop % cd ..
+1012283@1012283-student-HXJKD5M0265D ~ % date
+Mon Sep  9 11:41:21 EDT 2024
+1012283@1012283-student-HXJKD5M0265D ~ % cd Desktop
+1012283@1012283-student-HXJKD5M0265D Desktop % cd quiz
+1012283@1012283-student-HXJKD5M0265D quiz % echo destination > quiz
+1012283@1012283-student-HXJKD5M0265D quiz % ls
+quiz
+1012283@1012283-student-HXJKD5M0265D quiz % mv move_me.txt
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+1012283@1012283-student-HXJKD5M0265D quiz % echo hi
+hi
+1012283@1012283-student-HXJKD5M0265D quiz % mkdir
+usage: mkdir [-pv] [-m mode] directory_name ...
+1012283@1012283-student-HXJKD5M0265D quiz % mkdr destionation 
+zsh: command not found: mkdr
+1012283@1012283-student-HXJKD5M0265D quiz % mkdir destination 
+1012283@1012283-student-HXJKD5M0265D quiz % ls
+destination	quiz
+1012283@1012283-student-HXJKD5M0265D quiz % mv move_me.txt > destination
+zsh: is a directory: destination
+1012283@1012283-student-HXJKD5M0265D quiz % cp compy_me.txt >  destionation
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+1012283@1012283-student-HXJKD5M0265D quiz % cp compy_me.txt > destionation 
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+1012283@1012283-student-HXJKD5M0265D quiz % cp copy_me.txt destionation 
+cp: copy_me.txt: No such file or directory
+1012283@1012283-student-HXJKD5M0265D quiz % cp copy_me.txt destination 
+cp: copy_me.txt: No such file or directory
+1012283@1012283-student-HXJKD5M0265D quiz % cp copy_me.txt >  destination
+zsh: is a directory: destination
+1012283@1012283-student-HXJKD5M0265D quiz % ls
+destination	destionation	quiz
+1012283@1012283-student-HXJKD5M0265D quiz % cd destintion
+cd: no such file or directory: destintion
+1012283@1012283-student-HXJKD5M0265D quiz % cd destination
+1012283@1012283-student-HXJKD5M0265D destination % ls
+1012283@1012283-student-HXJKD5M0265D destination % date
+Mon Sep  9 11:50:07 EDT 2024
+1012283@1012283-student-HXJKD5M0265D destination % 
