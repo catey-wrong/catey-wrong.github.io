@@ -1,4 +1,4 @@
-# Tihis is a practice markdown file. 
+more_markdown.d# This is a practice markdown file. 
 
 Hello, I am  wizard 
 
@@ -19,5 +19,5 @@ Hello, I am  wizard
 ## here's a link 
 
 [this is the text that is disokayed](www.example.com)
-![this is the text](file:///Users/1012283/Desktop/images-1.jpg)
+![this is the text](https://static.independent.co.uk/2024/09/13/12/GW6b31Ha8AEDvYQ.jpg?quality=75&width=640&auto=webp)
 
