@@ -21,3 +21,12 @@ Hello, I am  wizard
 [Click this link to get to a video of moo deng](https://youtu.be/BeGXNtnRbIs?si=_r7A9oYFZgjnPtwU)
 ![MOO DENG!!!](https://static.independent.co.uk/2024/09/13/12/GW6b31Ha8AEDvYQ.jpg?quality=75&width=640&auto=webp)
 
+## Heres some cool movies
+
+|Names                 |Type                    |
+|----------------------|------------------------|
+|Spiderman: ITS        |Superhero               |
+|Lady Bird             |Coming of age           |
+|Bottoms               |Comedy                  |
+
+
