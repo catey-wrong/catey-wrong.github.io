@@ -1,8 +1,9 @@
 ## Welcome to my journal
 
 
-## Journal entry 3 
-	# The links wont work so my entry is here
+## Journal entry 3
+` 
+The links wont work so my entry is here
 
 
 ## Lesson Summary:
