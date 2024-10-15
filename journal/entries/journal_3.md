@@ -4,7 +4,7 @@ In Carpentry 1 we learned how to use a bandsaw. We need to use it on our tool bo
 
 ## Bandsaw diagram:
 
-![This is an image of the bandsaw in the ACC shop.]((https://www.diamondtoolstore.com/cdn/shop/products/pm2415b-24-bandsaw-5hp-1ph-230v-460390.png?v=1694446929&width=1045)
+![This is an image of the bandsaw in the ACC shop.](https://www.diamondtoolstore.com/cdn/shop/products/pm2415b-24-bandsaw-5hp-1ph-230v-460390.png?v=1694446929&width=1045)
 
 ## Bandsaw Steps:
 
