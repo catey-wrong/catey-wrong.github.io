@@ -1,7 +1,9 @@
 ## Welcome to my journal
 
 
-This stupid thing wpnt work and i can got to you cause i have no time so im just going to put the journal entry here.
+## Journal entry 3 
+	# The links wont work so my entry is here
+
 
 ## Lesson Summary:
 
