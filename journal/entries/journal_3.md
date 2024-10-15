@@ -4,7 +4,8 @@ In Carpentry 1 we learned how to use a bandsaw. We need to use it on our tool bo
 
 ## LaTeX
 $\angle45\degree+\angle45\degree=\angle90\degree$
-$3/4"+1/2"=1 1/4"$
+
+$\frac{3}{4}"+\frac{1}{2}"=1\frac{1}{4}"$
 
 ## Bandsaw diagram:
 
