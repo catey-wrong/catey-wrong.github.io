@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Favorite Recipie 2</title>
+        <title>Rice Krispie Treats Recipe</title>
         <script src="../js/init.js"></script>
     </head>
     <body>
-        <h1> My second recipe </h1>
+        <h1>Rice Krispie Treats</h1>
+
+	<img src=RiceKrispie.jpg
+                  alt="Picture of rice krispie treats"
+                  srcset="image/SmallKrispie.jpg 480w,
+                          image/MedKrispie.jpg 800w,
+                          image/LargeKrispie.jpg 1200w"
+                  sizes="(max-width: 480px) 95vw,
+                         (max-width: 800px) 45vw,
+                         30vw">
+
         <a href="#InstructionHeader">Jump to Recipe</a>
         <h2> Background </h2>
         <p> How about a suicide pact?
@@ -34,10 +44,72 @@ Barry?
 Roses are flowers!
 Yes, they are.
 Flowers, bees, pollen! </p>
+	
 
-        <h2 id="InstructionHeader">Instructions</h2>
-        <!--add a table here-->
+	<table>
+       <caption><h2 id="InstructionHeader">Ingredients</h2></caption>
+	<thead>
+	     <tr>
+		 <th style="border:1px solid">Ingredient
+		 <th style="border:1px solid">Amount
+	     </tr>
+	</thead>
 
+	<tbody>
+	       <tr>
+	     <td style="border:1px solid">Butter
+	     <td style="border:1px solid">3 Tbsp
+	       </tr>
+	       <tr>
+	     <td style="border:1px solid">Mini Marshmallows
+	     <td style="border:1px solid">5 1/2 cups
+	       </tr>
+	       <tr> 
+	     <td style="border:1px solid">Rice Krispies
+	     <td style="border:1px solid">6 cups
+	       </tr>
+	</tbody>
+	</table>
+  
+	<table>
+        <caption><h2>Directions</h2></caption>
+        <thead>
+             <tr>
+                 <th style="border:1px solid">Step Number
+                 <th style="border:1px solid">Step
+             </tr>
+        </thead>
+
+        <tbody>
+               <tr>
+             <td style="border:1px solid">1
+             <td style="border:1px solid">In a large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. 
+               </tr>
+               <tr>
+             <td style="border:1px solid">2
+             <td style="border:1px solid">Add Rice Krispies cereal. Stir until well coated. 
+               </tr>
+               <tr>
+             <td style="border:1px solid">3
+             <td style="border:1px solid">Using buttered spatula or wax paper, evenly press mixture into 13 x 9 x 2-inch pan coated with cooking spray.
+               </tr>
+	       <tr>
+		   <td style="border:1px solid" colspan=2>Yeilds 24 servings
+	       </tr>
+	       <tr>
+		   <td style="border:1px solid" colspan=2>Total time: 15 min
+	       </tr>
+        </tbody>
+        </table>
+
+
+	<h2> Tips and Tricks </h2>
+	
+	<ul>
+	    <li>You can line your baking pan with parchment paper or waxed paper to cut down on mess.</li>
+	    <li>Grease your spatula or spoon before combining the melted ingredients.</li>
+	    <li>For best results, use fresh marshmallows.</li>
+	</ul>
     </body>
 </html>
 
