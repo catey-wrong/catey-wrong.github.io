@@ -1,0 +1,15 @@
+     Body {
+     background-color:pink;
+     color:MediumVioletRed;
+   }
+     Header {
+     Background-color:Hotpink;
+     color:Indigo;
+}
+     th, td, table {
+         border: 1px solid;
+         border-collapse: collapse;
+	 Background-color:white;
+}
+
+

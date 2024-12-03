@@ -1,0 +1,16 @@
+<style>
+     Body {
+     background-color:MediumVioletRed;
+     color:White;
+   }
+     Header {
+     Background-color:Hotpink;
+     color:DarkBlue
+}
+     th, td, table {
+         border: 1px solid;
+         border-collapse: collapse;
+}
+</style>
+
+
