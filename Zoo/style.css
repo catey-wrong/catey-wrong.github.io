@@ -1,3 +1,7 @@
+     p {
+     font-family:"Georgia","Times New Roman",serif;
+}
+
      Body {
      background-color:pink;
      color:MediumVioletRed;
@@ -5,11 +9,23 @@
      Header {
      Background-color:Hotpink;
      color:Indigo;
+     text-align:center;
 }
      th, td, table {
          border: 1px solid;
          border-collapse: collapse;
 	 Background-color:white;
+         font-family:"Arial","Verdana",sans-serif;
+         text-align:center;
+
+}
+
+     h1 {
+        font-family:"Tahoma","Lucida console",sans-serif;
+        text-transform:uppercase;
 }
 
 
+     h2 {
+         font-family:"Tahoma","Lucida console",sans-serif;
+}
