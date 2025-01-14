@@ -1,20 +1,83 @@
-/* General styles */
+/* Page styles */
 
 Body {
+	background-image: url("image/Stars.jpeg");
+	background-color: #4273ad;
 
 }
 
 h1 {
-
+	font-family: 'DM Serif Display', 'Georgia', sans-serif;
+	color: #e3c844;
 }
 
 h2 {	
+	font-family: 'DM Serif Display', 'Georgia', sans-serif;
+	color: #e3c844;
+}
 
+
+p {
+	font-family: 'Palatino', serif;
+	color: #e8da95;
 }
 
 header {
-text-align:center;	
+	text-align:center;
+	padding: 1rem;
+	background-color: #325691;
+	border-radius: 30px;	
+	margin: 10px;
+	margin-top: 20px;
+}
+
+footer {
+	text-align: center;
+	background-color: #325691;
+        border-radius: 30px;
+	margin: 10px;
+        margin-top: 20px;
+	padding: 1rem;
+}
+
+.nav-links {
+	font-family: sans-serif;
+	font-weight: bold;
+	list-style: none;
+	padding:0;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+main {
+	padding: 2rem;
+	background-color: #325691;
+        border-radius: 30px;
+	margin: 10px;
+	margin-top: 20px;
 
 }
 
+/* grid layout - project page */
 
+.grid-layout {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+	text-align: center;
+}
+
+/* Box model */
+
+#introduction {
+	padding: 1rem;
+	margin: 1rem 0;
+	
+}
+
+#image img {
+	max-width: 100%;
+	padding: 1rem;
+
+}
