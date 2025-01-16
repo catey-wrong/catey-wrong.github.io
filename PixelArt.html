@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10x10 Grid with CSS Grid</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(10, 1fr);
+      width: 100vmin;
+      height: 100vmin;
+      margin:auto;
+    }
+
+    .grid-container div {
+      background-color: #88c5f7;
+    }
+
+    /* Color specific squares */
+    .grid-container div:nth-child(34),
+    .grid-container div:nth-child(37),
+    .grid-container div:nth-child(45),
+    .grid-container div:nth-child(46){
+        background-color:black;
+    }
+    
+
+    .grid-container div:nth-child(65),
+    .grid-container div:nth-child(66){
+        background-color:#f2a2ce;   
+    }
+
+    .grid-container div:nth-child(44),
+    .grid-container div:nth-child(47),
+    .grid-container div:nth-child(52),
+    .grid-container div:nth-child(59),
+    .grid-container div:nth-child(63),
+    .grid-container div:nth-child(68){
+        background-color:#1e1e21;  
+    }
+    
+    .grid-container div:nth-child(44),
+    .grid-container div:nth-child(47),
+    .grid-container div:nth-child(64),
+    .grid-container div:nth-child(67){
+        background-color:white;
+    }
+
+    /*
+        We can use this syntax to select a range:
+        - `div:nth-child(n+41)`: Selects all `div` elements that are the 41st child or later.
+        - `:nth-child(-n+50)`: Selects all `div` elements that are the 50th child or earlier.
+    */
+    .grid-container div:nth-child(n+74):nth-child(-n+77) {
+      background-color: #3d4fa6;
+    }
+     .grid-container div:nth-child(n+14):nth-child(-n+17) {
+      background-color: #1e1e21;
+    }
+    .grid-container div:nth-child(n+23):nth-child(-n+28) {
+      background-color: #1e1e21;
+    }
+    .grid-container div:nth-child(n+32):nth-child(-n+33) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+35):nth-child(-n+36) {
+      background-color: #1e1e21;
+    }
+      .grid-container div:nth-child(n+38):nth-child(-n+39) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+42):nth-child(-n+43) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+48):nth-child(-n+49) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+83):nth-child(-n+84) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+87):nth-child(-n+88) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+92):nth-child(-n+94) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+97):nth-child(-n+99) {
+      background-color: #1e1e21;
+    }
+     .grid-container div:nth-child(n+53):nth-child(-n+58) {
+      background-color: white;
+    }
+     .grid-container div:nth-child(n+85):nth-child(-n+86) {
+      background-color: white;
+    }
+     .grid-container div:nth-child(n+95):nth-child(-n+96) {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- 100 divs -->
+   <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+  </div>
+</body>
+</html>
