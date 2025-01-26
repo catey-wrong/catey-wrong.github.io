@@ -1,0 +1,41 @@
+@-moz-document url-prefix("https://ict.gctaa.net/") {
+    body{
+    background-color:Lavenderblush
+       
+}  
+h1 {
+  font-family:cursive, sans-serif;
+  color: Deeppink;
+  text-align:center
+   
+}
+h2 {
+  font-family:cursive, sans-serif;
+  color: Hotpink;
+  text-align:center
+}
+
+p {
+  font-family: 'AmericanTypewriter', sans-serif
+    
+}
+    
+li {
+   font-family: 'AmericanTypewriter', sans-serif     
+      
+}
+    
+#md_to_html{
+   padding:50px;
+   border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px) 60;
+
+   border-width: 20px;
+   border-color: #ff0090;
+}
+
+#topic{
+   text-align:center 
+        
+}
+
+}
