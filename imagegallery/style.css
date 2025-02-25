@@ -1,0 +1,66 @@
+body {
+  font-family: "Goudy Old Style","Didot",Serif;
+  background-color: #FFF3E0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align:center;
+}
+
+.gallery {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+/* Style 1: width and height */
+.style1 {
+  width: 100px;
+  height: auto;
+}
+
+/* Style 2: max-width */
+.style2 {
+  width: 100%;
+  max-height: 30%;
+}
+
+/* Style 3: object-fit and object position */
+.style3 {
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  height: 350px;
+}
+
+/* Style 4: border and border radius */
+.style4 {
+  border: 10px solid;
+  border-radius: 15px;
+  border-color: #EF5350;
+
+}
+
+/* Style 5: box shadow */
+.style5 {
+  box-shadow: 10px 10px 20px #EF5350;
+}
+
+/* Style 6: opacity */
+.style6 {
+  opacity:0.4;
+}
+
+/* Style 7: filter*/
+.style7 {
+  filter: saturate(3) blur(5px);
+}
+
+/* Style 8:i z-index  */
+.style8 {
+ position: relative;
+ z-index: 10;
+}
