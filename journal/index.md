@@ -5,3 +5,5 @@
 - [this is my third journal entry](entries/journal_3.md)
 - [this is my fourth journal entry](entries/journal_4.md)
 - [this is my fifth journal entry](entries/journal_5.md)
+- [this is my sixth journal entry](entries/journal_6.md)
+
