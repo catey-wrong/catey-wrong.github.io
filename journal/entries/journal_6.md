@@ -9,10 +9,13 @@ Cosmetology repo:
 [Click here to get to the repository](https://github.com/toemio/cosmetology) 
 
 Services.html (Services page)
-![This is a image of the services page on our website](Services.jpg)
+![This is a image of the services page on our website](../Services.jpg)
 
 Apptform.html (Make an appointment form)
-![This is a image of the make an appointment form.](Apptform.jpg)
+![This is a image of the make an appointment form.](../../Apptform.jpg)
+
+Apptform.html (Make an appointment form)
+![This is a image of the make an appointment form.](../../../Apptform.jpg)
 
 My form is to make an appointment. I used 4 input types: Text inputs, Dropdown menus, Text area, and button. The request method is get so that the information goes to me. 
 
