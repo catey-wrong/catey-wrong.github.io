@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>My Self Portrait</title>
+     <script src="js/init.js"></script>
+     <style>
+	canvas{
+
+
+}
+     </style>
+</head>
+<body>
+<h1> Self Portrait</h1>
+<canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+<script>
+  const canvas = document.getElementById ("myCanvas");
+  const ctx = canvas.getContext ("2d")
+
+  ctx.fillStyle = 'lightblue' ;
+  ctx.fillRect(0,0,400,400);
+ 
+    ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(130, 260, 60, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+  
+  ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(270, 260, 60, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(120, 130, 50, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+   ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(285, 130, 50, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(90, 190, 50, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+   ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(310, 190, 50, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.fillStyle = "black";
+  ctx.strokeStyle = "black";
+  ctx.beginPath();
+  ctx.arc(200,400,140,160,2*Math.PI);
+  ctx.stroke();
+  ctx.fill();
+ 
+  ctx.fillStyle = '#ffdabe';
+  ctx.strokeStyle = '#ffdabe';
+  ctx.beginPath();
+  ctx.arc(200, 260, 40, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill(); 
+
+  ctx.fillStyle = "#ffdabe";
+  ctx.fillRect(160, 200, 80, 70);
+
+  ctx.fillStyle = '#ffdabe';
+  ctx.strokeStyle = '#ffdabe';
+  ctx.beginPath();
+  ctx.arc(200, 180, 75, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.fillStyle = "#ffdabe";
+  ctx.fillRect(125, 70, 150, 120); 
+  
+  ctx.fillStyle = "#382600";
+  ctx.fillRect(215, 135, 40, 10); 
+  
+  ctx.fillStyle = "#382600";
+  ctx.fillRect(145, 135, 40, 10);  
+ 
+   ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(255, 85, 55, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+   ctx.fillStyle = '#4e2600';
+  ctx.strokeStyle = '#4e2600';
+  ctx.beginPath();
+  ctx.arc(155, 85, 55, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+  ctx.fillStyle = 'black';
+  ctx.strokeStyle = 'black';
+  ctx.beginPath();
+  ctx.arc(233, 165, 6, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill(); 
+
+  ctx.fillStyle = 'black';
+  ctx.strokeStyle = 'black';
+  ctx.beginPath();
+  ctx.arc(167, 165, 6, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+ 
+  ctx.fillStyle = 'white';
+  ctx.strokeStyle = 'white';
+  ctx.beginPath();
+  ctx.arc(200, 200, 40, 0,Math.PI);
+  ctx.stroke();
+  ctx.fill();  
+
+  ctx.scale(1,0.70);
+  ctx.fillStyle = '#F3C1B1';
+  ctx.strokeStyle = '#F3C1B1';
+  ctx.beginPath();
+  ctx.arc(200, 265, 12, 0, 2  * Math.PI);
+  ctx.stroke();
+  ctx.fill();
+
+</script>
+
+</body>
+</html>
