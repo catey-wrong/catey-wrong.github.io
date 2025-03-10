@@ -53,9 +53,24 @@ footer {
 	display: flex;
 	justify-content: center;
 	gap: 1rem;
-	color: white;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
 }
 
+.nav-links:hover {
+	transform: scale(1.1);
+}
+
+.nav-links a {
+    color:white; 
+    text-decoration:none;
+    font-weight:bold
+}
+
+.links a {
+    color:white;
+
+}
 main {
 	padding: 2rem;
 	background-color: #325691;
