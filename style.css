@@ -6,6 +6,10 @@ Body {
 
 }
 
+#htmlcss p a{
+	color: white;
+}
+
 h1 {
 	font-family: 'DM Serif Display', 'Georgia', sans-serif;
 	color: #e3c844;
