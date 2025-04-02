@@ -50,11 +50,34 @@ We'll use this to inform our study plan for the test.
 | **Section 5: Accessibility, Best Practices, and Modern HTML** | 5.1       |      A    | Explain the core principles of web accessibility and the importance of following WCAG guidelines.                                                                                                                                  |
 |                                                               | 5.2       |      B     | Utilize ARIA roles (role), states, and properties (aria-expanded, aria-checked, aria-hidden) to make web content more accessible.                                                                                                  |
 |                                                               | 5.3       |      A     | Implement semantic markup and integrate modern HTML5 structural elements for document organization (header, nav, main, article, section, aside, footer).                                                                           |
-|                                                               | 5.4       |      C     | Apply microformats (hCard, vCard), microdata, and schema.org (itemprop, itemscope) for enriched content semantics.                                                                                                                 |
-|                                                               | 5.5       |      B     | Understand and apply the basics of HTML APIs (Geolocation, Web Storage) in web applications.                                                                                                                                       |
+|                                                               | 5.4       |      E     | Apply microformats (hCard, vCard), microdata, and schema.org (itemprop, itemscope) for enriched content semantics.                                                                                                                 |
+|                                                               | 5.5       |      E     | Understand and apply the basics of HTML APIs (Geolocation, Web Storage) in web applications.                                                                                                                                       |
 |                                                               | 5.6       |      B     | Utilize SVG for scalable vector graphics, focusing on its benefits and basic syntax.                                                                                                                                               |
 |                                                               | 5.7       |      A     | Discuss HTML5 development best practices, focusing on code readability and performance.                                                                                                                                            |
 |                                                               | 5.8       |      A     | Understand and apply the basics of testing web accessibility.                                                                                                                                                                      |
  
 
 ## Study Plan
+
+### 2.6
+Employ code, pre, kbd, and samp tags to display preformatted text, format code snippets and user input.
+
+[2.6 Practice Page] (exam_practice_2.html)
+
+<code> is used to display inline or block code.
+
+<pre> preserves formatting like spacing and line breaks.
+
+<kbd> represents keyboard input (what a user types).
+
+<samp> shows sample output from a program.
+
+The practice helped me remember and memorize these tags and how their used. 
+
+### 3.6
+Embed external web content with iframe, including making iframes responsive.
+
+[3.6 Practice Page] (iframe_pracice.html)
+
+iFrames (short for inline frames) are HTML elements that act as a window into another web page or document. The practice helped me understand the application of iframes and better learn the correct html to use an iframe. 
+
