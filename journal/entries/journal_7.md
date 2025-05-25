@@ -23,7 +23,7 @@ My game will be a casual game with a bit of strategy. It's not a game where ther
 - Sheep’s head goes in direction that its moving
 
 
-##Make some concept art - in an HTML/JS canvas, generate a (still) image that will represent one frame of your game. 
+## Make some concept art - in an HTML/JS canvas, generate a (still) image that will represent one frame of your game. 
 
-![This is some concept art of my frame](../../sheep.html)
+![This is some concept art of my frame](../sheep.html)
 
