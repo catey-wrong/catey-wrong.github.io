@@ -1,6 +1,8 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
+let gameStarted = false;
+
 function drawFence(){
     ctx.fillStyle = "white";  
     ctx.fillRect(0, 375, 150, 15);
@@ -160,12 +162,19 @@ function movePlayer(){
 
 function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        movePlayer();
+     if (gameStarted) {
+	movePlayer();
         drawPlayer();
 	drawFence();
 	moveSheep();
         drawSheep();
 	sheepPlayerCollisions();
+    } else {
+        ctx.fillStyle = "black";
+        ctx.font = "32px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("Press Start to Play", canvas.width/2, canvas.height/2);
+    }
         requestAnimationFrame(animate);
 }
 
@@ -176,6 +185,18 @@ function handleKeyPress(e){
 document.addEventListener('keydown', handleKeyPress);
 document.addEventListener('keyup', (e) => {
     keys[e.key] = false;
+});
+
+const startButton = document.createElement('button');
+startButton.innerText = "Start";
+startButton.style.display = "block";
+startButton.style.margin = "12px auto";
+startButton.style.fontSize = "24px";
+canvas.insertAdjacentElement('afterend', startButton);
+
+startButton.addEventListener('click', () => {
+    gameStarted = true;
+    startButton.style.display = "none";
 });
 
 animate();
