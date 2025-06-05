@@ -77,18 +77,32 @@ for (let sheep of sheepArray){
   }
 }
 
+let score = 0;
+
 function moveSheep() {
-    for (let sheep of sheepArray) {
-	if (Math.random() < 0.008) {    
-        const angle = Math.random() * 2 * Math.PI;
-        sheep.vx = Math.cos(angle) * SHEEP_SPEED;
-        sheep.vy = Math.sin(angle) * SHEEP_SPEED;
-	}	
-	const oldX = sheep.x;
+    for (let i = sheepArray.length - 1; i >= 0; i--) {
+        let sheep = sheepArray[i];
+        if (Math.random() < 0.008) {
+            const angle = Math.random() * 2 * Math.PI;
+            sheep.vx = Math.cos(angle) * SHEEP_SPEED;
+            sheep.vy = Math.sin(angle) * SHEEP_SPEED;
+        }
+        const oldX = sheep.x;
         const oldY = sheep.y;
-	sheep.x += sheep.vx;
-	sheep.y += sheep.vy;
-	if (hitFence(sheep.x, sheep.y, sheep.radius)) {
+        sheep.x += sheep.vx;
+        sheep.y += sheep.vy;
+
+        if (
+            sheep.x - sheep.radius > 150 &&
+            sheep.x + sheep.radius < 250 &&
+            sheep.y - sheep.radius > 375
+        ) {
+            sheepArray.splice(i, 1); 
+            score++;
+            continue;
+        }
+
+        if (hitFence(sheep.x, sheep.y, sheep.radius)) {
             sheep.x = oldX;
             sheep.y = oldY;
             sheep.vx *= -1;
@@ -169,6 +183,10 @@ function animate() {
 	moveSheep();
         drawSheep();
 	sheepPlayerCollisions();
+    ctx.fillStyle = "black";
+    ctx.font = "24px Arial";
+    ctx.textAlign = "left";
+    ctx.fillText("Score: " + score, 10, 30);
     } else {
         ctx.fillStyle = "black";
         ctx.font = "32px Arial";
