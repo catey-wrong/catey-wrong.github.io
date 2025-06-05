@@ -56,7 +56,8 @@ function randomPosition(radius) {
 const SHEEP_SPEED = 0.5
 
 const sheepArray = [];
-for (let i = 0; i < 3; i++) {
+function spawnSheep(n) {
+    for (let i = 0; i < n; i++) {
     const pos = randomPosition(25);
     sheepArray.push({
         x: pos.x,
@@ -66,7 +67,10 @@ for (let i = 0; i < 3; i++) {
         radius: 25,
         color: 'white'
     });
+  }
 }
+
+spawnSheep(3);
 
 function drawSheep() {
 for (let sheep of sheepArray){
@@ -202,7 +206,10 @@ function animate() {
         drawPlayer();
 	drawFence();
 	moveSheep();
-        drawSheep();
+        if (sheepArray.length === 0 && !gameOver) {
+        spawnSheep(3);
+}
+	drawSheep();
 	sheepPlayerCollisions();
     ctx.fillStyle = "black";
     ctx.font = "24px Arial";
