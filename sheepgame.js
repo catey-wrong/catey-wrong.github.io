@@ -7,6 +7,26 @@ function drawFence(){
     ctx.fillRect(250, 375, 150, 15);
 }
 
+function inFence(x, y, radius) {
+    if (
+        x + radius > 0 &&
+        x - radius < 150 &&
+        y + radius > 375 &&
+        y - radius < 390
+    ) {
+        return true;
+    }
+    if (
+        x + radius > 250 &&
+        x - radius < 400 &&
+        y + radius > 375 &&
+        y - radius < 390
+    ) {
+        return true;
+    }
+    return false;
+}
+
 const player = {
   x: 200,
   y: 200,
@@ -42,7 +62,7 @@ function randomVelocity(speed) {
 const sheepArray = [];
 for (let i = 0; i < 3; i++) {
     const pos = randomPosition(25);
-    const vel = randomVelocity(1.5);
+    const vel = randomVelocity(1);
     sheepArray.push({
         x: pos.x,
         y: pos.y,
@@ -70,8 +90,16 @@ function moveSheep() {
            sheep.vx = vel.vx;
            sheep.vy = vel.vy;
         }
+	const oldX = sheep.x;
+        const oldY = sheep.y;
 	sheep.x += sheep.vx;
 	sheep.y += sheep.vy;
+	if (inFence(sheep.x, sheep.y, sheep.radius)) {
+            sheep.x = oldX;
+            sheep.y = oldY;
+            sheep.vx *= -1;
+            sheep.vy *= -1;
+        }
     }
 }
 
