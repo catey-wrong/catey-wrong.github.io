@@ -4,7 +4,6 @@ const ctx = canvas.getContext("2d");
 ctx.fillStyle = "MediumSeaGreen";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-//sheep
 
 function drawSheep(ctx, x, y, size = 25) {
     whiteCircle(ctx, x, y, size);
