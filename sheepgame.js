@@ -78,19 +78,33 @@ for (let sheep of sheepArray){
 }
 
 let score = 0;
+let gameOver = false;
 
 function moveSheep() {
     for (let i = sheepArray.length - 1; i >= 0; i--) {
         let sheep = sheepArray[i];
+
         if (Math.random() < 0.008) {
-            const angle = Math.random() * 2 * Math.PI;
+        const angle = Math.random() * 2 * Math.PI;
             sheep.vx = Math.cos(angle) * SHEEP_SPEED;
             sheep.vy = Math.sin(angle) * SHEEP_SPEED;
         }
+
         const oldX = sheep.x;
         const oldY = sheep.y;
-        sheep.x += sheep.vx;
-        sheep.y += sheep.vy;
+            sheep.x += sheep.vx;
+            sheep.y += sheep.vy;
+
+        if (
+            sheep.x + sheep.radius < 0 ||
+            sheep.x - sheep.radius > canvas.width ||
+            sheep.y + sheep.radius < 0 ||
+            sheep.y - sheep.radius > canvas.height
+        ) {
+            gameOver = true;
+            gameStarted = false;
+            return;
+        } 
 
         if (
             sheep.x - sheep.radius > 150 &&
@@ -107,7 +121,7 @@ function moveSheep() {
             sheep.y = oldY;
             sheep.vx *= -1;
             sheep.vy *= -1;
-        }
+	}
     }
 }
 
@@ -176,6 +190,13 @@ function movePlayer(){
 
 function animate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
+    if (gameOver) {
+        ctx.fillStyle = "black";
+        ctx.font = "40px Arial";
+        ctx.textAlign = "center";
+        ctx.fillText("You lost :(", canvas.width/2, canvas.height/2);
+        return; 
+    }
      if (gameStarted) {
 	movePlayer();
         drawPlayer();
