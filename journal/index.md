@@ -8,3 +8,4 @@
 - [this is my sixth journal entry](entries/journal_6.md)
 - [this is my exam study entry](entries/examprep.md)
 - [this is my seventh journal entry](entries/journal_7.md)
+- [this is my eighth journal entry](entries/journal_8.md)
